@@ -791,11 +791,13 @@ endforeach(arg ${RESOURCES})
 #MESSAGE(STATUS "RESOURCES_HEADERS = ${RESOURCES_HEADERS}")
 
 ADD_CUSTOM_COMMAND(
-	OUTPUT ${RESOURCES_HEADERS}
-	COMMAND res_tool -n rtabmap -p ${CMAKE_CURRENT_BINARY_DIR} ${RESOURCES}
-	COMMENT "[Creating resources]"
-	DEPENDS ${RESOURCES}
+    OUTPUT ${RESOURCES_HEADERS}
+    COMMAND /opt/sysroots/aarch64-linux-gnu/root/.hunter/_Base/1292e4d/da0fb0e/17ec023/Build/rtbmap/Build/rtbmap-Release-prefix/src/rtbmap-Release-build/bin/rtabmap-res_tool -n rtabmap -p ${CMAKE_CURRENT_BINARY_DIR} ${RESOURCES}
+    COMMENT "[Creating resources]"
+    DEPENDS ${RESOURCES}
 )
+
+
 
 ####################################
 # Generate resources files END
