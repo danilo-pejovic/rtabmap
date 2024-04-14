@@ -1,5 +1,5 @@
 
-if (CMAKE_CROSSCOMPILING OR ANDROID OR IOS)
+if (ANDROID OR IOS)
     # See this page about tools being required in the build:
     # https://gitlab.kitware.com/cmake/community/-/wikis/doc/cmake/CrossCompiling#using-executables-in-the-build-created-during-the-build
 
